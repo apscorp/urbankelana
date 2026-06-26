@@ -3,448 +3,234 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Kelana — Perjalanan. Rasa. Cerita.</title>
-  <meta name="description" content="Channel YouTube dokumentasi perjalanan harian komuter Jakarta — dari Cileungsi ke Kemang. Macet, kuliner, explore, dan cerita jalanan bersama Andri." />
-  <meta property="og:title" content="Urban Kelana — Perjalanan. Rasa. Cerita." />
-  <meta property="og:description" content="Channel YouTube dokumentasi perjalanan komuter harian Jakarta." />
-  <meta property="og:type" content="website" />
+  <title>Urban Kelana – Perjalanan. Rasa. Cerita.</title>
+  <meta name="description" content="Channel tentang perjalanan harian Cileungsi–Kemang, kuliner lokal, hidden gems, dan momen keluarga." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ── NAV ──────────────────────────────────────────────────── -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <span class="nav-logo-urban">URBAN</span>
-        <span class="nav-logo-kelana">Kelana</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#pillars">Konten</a></li>
-        <li><a href="#plan">30 Hari</a></li>
-        <li><a href="#kpi">Target</a></li>
-        <li><a href="#subscribe" class="nav-cta">Subscribe →</a></li>
-      </ul>
-      <button class="nav-burger" aria-label="Menu" id="burger">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="nav-mobile" id="nav-mobile">
-      <a href="#about">Tentang</a>
-      <a href="#pillars">Konten</a>
-      <a href="#plan">30 Hari</a>
-      <a href="#kpi">Target</a>
-      <a href="#subscribe">Subscribe</a>
-    </div>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="Urban Kelana" class="nav-logo-img" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#konten">Konten</a></li>
+      <li><a href="#jadwal">Jadwal</a></li>
+      <li><a href="#sosmed">Ikuti Kami</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">&#9776;</button>
   </nav>
 
-  <!-- ── HERO ─────────────────────────────────────────────────── -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-glow hero-glow--olive"></div>
-      <div class="hero-glow hero-glow--gold"></div>
-    </div>
-
-    <!-- Animated road -->
-    <div class="road-wrap" aria-hidden="true">
-      <svg class="road-svg" viewBox="0 0 80 600" preserveAspectRatio="none">
-        <path class="road-line" d="M 40 0 C 40 100 40 200 40 300 C 40 400 40 500 40 600"
-              stroke="#F5B041" stroke-width="2" fill="none"
-              stroke-dasharray="12 10" stroke-linecap="round"/>
-      </svg>
-    </div>
-
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-road"></div>
     <div class="hero-inner">
-      <!-- Logo SVG inline -->
-      <div class="hero-logo" id="hero-logo">
-        <svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Urban Kelana">
-          <circle cx="200" cy="185" r="178" fill="#0F172A" stroke="#0F172A" stroke-width="3"/>
-          <circle cx="200" cy="185" r="165" fill="white"/>
-          <clipPath id="ic"><circle cx="200" cy="185" r="163"/></clipPath>
-          <g clip-path="url(#ic)">
-            <rect x="0" y="0" width="400" height="420" fill="#F5E6C8"/>
-            <circle cx="210" cy="95" r="52" fill="#F5B041"/>
-            <rect x="0" y="120" width="400" height="300" fill="#F5E6C8"/>
-            <!-- Birds -->
-            <path d="M130 60 Q135 55 140 60" stroke="#0F172A" stroke-width="1.5" fill="none"/>
-            <path d="M155 48 Q161 43 167 48" stroke="#0F172A" stroke-width="1.5" fill="none"/>
-            <path d="M270 50 Q276 45 282 50" stroke="#0F172A" stroke-width="1.5" fill="none"/>
-            <!-- Skyline -->
-            <rect x="30" y="95" width="18" height="85" fill="#1E2A3A"/>
-            <rect x="55" y="75" width="22" height="105" fill="#1E2A3A"/>
-            <rect x="82" y="88" width="20" height="92" fill="#263447"/>
-            <rect x="150" y="58" width="25" height="122" fill="#1E2A3A"/>
-            <polygon points="162,56 175,40 188,56" fill="#1E2A3A"/>
-            <rect x="178" y="53" width="28" height="127" fill="#263447"/>
-            <rect x="210" y="68" width="22" height="112" fill="#1E2A3A"/>
-            <rect x="235" y="78" width="30" height="102" fill="#263447"/>
-            <rect x="268" y="62" width="22" height="118" fill="#1E2A3A"/>
-            <rect x="293" y="83" width="20" height="97" fill="#1E2A3A"/>
-            <rect x="318" y="93" width="25" height="87" fill="#263447"/>
-            <rect x="346" y="98" width="38" height="82" fill="#1E2A3A"/>
-            <!-- Trees -->
-            <ellipse cx="55" cy="175" rx="34" ry="30" fill="#3A5A1A"/>
-            <ellipse cx="38" cy="186" rx="24" ry="22" fill="#4A6A25"/>
-            <ellipse cx="82" cy="180" rx="26" ry="24" fill="#3A5A1A"/>
-            <!-- Road -->
-            <polygon points="128,350 272,350 228,176 172,176" fill="#4A4A4A"/>
-            <rect x="194" y="198" width="12" height="24" rx="2" fill="white" opacity="0.75"/>
-            <rect x="194" y="234" width="12" height="24" rx="2" fill="white" opacity="0.75"/>
-            <rect x="194" y="270" width="12" height="24" rx="2" fill="white" opacity="0.75"/>
-            <rect x="194" y="306" width="12" height="24" rx="2" fill="white" opacity="0.75"/>
-            <!-- Warung right -->
-            <rect x="276" y="152" width="72" height="58" fill="#8B7355"/>
-            <polygon points="263,152 360,152 360,142 273,142" fill="#6B5335"/>
-            <rect x="290" y="160" width="22" height="28" fill="#A0875A"/>
-            <circle cx="312" cy="145" r="13" fill="#F5B041"/>
-            <text x="312" y="150" text-anchor="middle" font-size="7.5" font-weight="bold" fill="#0F172A" font-family="Arial">KOPI</text>
-            <rect x="316" y="150" width="30" height="20" fill="#D4B896" rx="2"/>
-            <text x="331" y="162" text-anchor="middle" font-size="5.5" font-weight="bold" fill="#5A3A1A" font-family="Arial">WARUNG</text>
-            <!-- Rider -->
-            <ellipse cx="176" cy="284" rx="22" ry="11" fill="#1A1A1A"/>
-            <ellipse cx="154" cy="284" rx="14" ry="11" fill="#222"/>
-            <ellipse cx="166" cy="266" rx="15" ry="19" fill="#2A2A2A"/>
-            <ellipse cx="171" cy="248" rx="13" ry="14" fill="#1A1A1A"/>
-            <rect x="151" y="258" width="14" height="19" rx="3" fill="#3A3A3A"/>
-          </g>
-          <circle cx="200" cy="185" r="165" fill="none" stroke="#0F172A" stroke-width="10"/>
-          <text x="200" y="305" text-anchor="middle" font-family="Arial Black, Arial" font-weight="900" font-size="62" fill="#0F172A" letter-spacing="2">URBAN</text>
-          <text x="200" y="362" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="62" font-style="italic" fill="#4A6020" letter-spacing="3">KELANA</text>
-          <line x1="92" y1="372" x2="166" y2="372" stroke="#0F172A" stroke-width="2.5"/>
-          <line x1="234" y1="372" x2="308" y2="372" stroke="#0F172A" stroke-width="2.5"/>
-          <text x="200" y="403" text-anchor="middle" font-family="Arial" font-size="14" fill="#0F172A" letter-spacing="3">PERJALANAN. RASA. CERITA.</text>
-        </svg>
-      </div>
-
-      <div class="hero-text">
-        <p class="hero-eyebrow">Channel YouTube · Jakarta</p>
-        <h1 class="hero-h1">
-          <span class="hero-h1-urban">URBAN</span>
-          <span class="hero-h1-kelana">Kelana</span>
-        </h1>
-        <p class="hero-tagline">Perjalanan. Rasa. Cerita.</p>
-        <p class="hero-sub">
-          Setiap hari Andri PP <strong>Cileungsi → Kemang</strong> naik motor.<br/>
-          Macet jadi konten. Warung jadi cerita. Jalanan jadi rumah.
-        </p>
-        <div class="hero-actions">
-          <a href="https://youtube.com/@urbankelana" target="_blank" rel="noopener" class="btn btn--primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-            Subscribe Sekarang
-          </a>
-          <a href="#about" class="btn btn--ghost">Kenali Kami ↓</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="hero-stat-n">30</span>
-            <span class="hero-stat-l">Video/Bulan</span>
-          </div>
-          <div class="hero-stat-div"></div>
-          <div class="hero-stat">
-            <span class="hero-stat-n">5K+</span>
-            <span class="hero-stat-l">Target Views</span>
-          </div>
-          <div class="hero-stat-div"></div>
-          <div class="hero-stat">
-            <span class="hero-stat-n">1</span>
-            <span class="hero-stat-l">Rider. Satu Jalan.</span>
-          </div>
-        </div>
+      <img src="logo.png" alt="Urban Kelana" class="hero-logo" />
+      <p class="hero-tagline">Setiap hari ada cerita di antara Cileungsi dan Kemang.</p>
+      <div class="hero-cta">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-ig">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="btn btn-tt">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.16 8.16 0 0 0 4.78 1.52V6.73a4.84 4.84 0 0 1-1.01-.04z"/></svg>
+          TikTok
+        </a>
       </div>
     </div>
+    <div class="hero-scroll-hint">↓ scroll</div>
+  </header>
 
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span>scroll</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- ── ABOUT ─────────────────────────────────────────────────── -->
-  <section class="section about" id="about">
+  <!-- TENTANG -->
+  <section class="section" id="tentang">
     <div class="container">
-      <div class="section-label reveal">Tentang Channel</div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2 class="section-title">Komuter Jakarta<br/><em>yang merekam segalanya.</em></h2>
-          <p>
-            Urban Kelana lahir dari rutinitas yang dianggap membosankan: pulang-pergi Cileungsi ke Kemang setiap hari. Tapi di balik kemacetan, ada cerita—warung tersembunyi, jalur rahasia, momen keluarga, dan pelajaran jalanan yang tidak ada di buku mana pun.
-          </p>
-          <p>
-            Host <strong>Andri</strong> mengubah komute harian menjadi dokumentasi hidup yang jujur, hangat, dan relatable untuk jutaan komuter Jakarta yang merasakan hal yang sama.
-          </p>
-          <div class="about-route">
-            <div class="route-point">
-              <div class="route-dot route-dot--start"></div>
-              <span>Cileungsi</span>
-            </div>
-            <div class="route-line">
-              <div class="route-line-inner" id="route-line-inner"></div>
-            </div>
-            <div class="route-point">
-              <div class="route-dot route-dot--end"></div>
-              <span>Kemang</span>
-            </div>
-          </div>
+      <div class="tentang-grid">
+        <div class="tentang-text">
+          <span class="eyebrow">Siapa Kami</span>
+          <h2>Hidup di antara dua kota, satu motor, satu kamera.</h2>
+          <p>Urban Kelana lahir dari rutinitas yang ternyata menyimpan banyak cerita — jalur yang tersembunyi, warung yang belum terjamah, dan momen keluarga yang tak ternilai.</p>
+          <p>Dari Cileungsi menuju Kemang, kami merekam perjalanan harian bersama kuliner lokal, eksplorasi hidden gems kawasan Bogor Timur, Jonggol, dan Cibubur, serta petualangan bersama keluarga.</p>
+          <blockquote class="motto">"Perjalanan. Rasa. Cerita."</blockquote>
         </div>
-        <div class="about-cards reveal">
-          <div class="about-card">
-            <div class="about-card-icon">🏍️</div>
-            <h3>Setiap Hari</h3>
-            <p>Dokumentasi konsisten tanpa skip—karena kehidupan nyata tidak menunggu mood yang bagus.</p>
+        <div class="tentang-stats">
+          <div class="stat-card">
+            <span class="stat-route">Cileungsi</span>
+            <span class="stat-arrow">⟶</span>
+            <span class="stat-route">Kemang</span>
+            <span class="stat-label">Rute Harian</span>
           </div>
-          <div class="about-card">
-            <div class="about-card-icon">📍</div>
-            <h3>Hyperlokal</h3>
-            <p>Fokus pada rute, warung, dan tempat yang benar-benar dilewati—bukan spot viral yang sudah jutaan orang tahu.</p>
-          </div>
-          <div class="about-card">
-            <div class="about-card-icon">❤️</div>
-            <h3>Jujur & Hangat</h3>
-            <p>Tidak ada script yang kaku. Hanya cerita nyata dari seorang ayah, suami, dan komuter biasa.</p>
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-desc">Video bulan pertama</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">4</span>
+              <span class="stat-desc">Pilar konten</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── PILLARS ────────────────────────────────────────────────── -->
-  <section class="section pillars" id="pillars">
+  <!-- KONTEN PILLARS -->
+  <section class="section section-dark" id="konten">
     <div class="container">
-      <div class="section-label reveal">Konten Pillar</div>
-      <h2 class="section-title reveal">4 Jenis Konten<br/><em>yang selalu hadir.</em></h2>
-
+      <span class="eyebrow eyebrow-light">Apa yang Kami Buat</span>
+      <h2 class="section-title-light">4 Pilar Konten</h2>
       <div class="pillars-grid">
-        <div class="pillar-card reveal" data-pillar="commute">
+        <div class="pillar-card">
           <div class="pillar-icon">🏍️</div>
-          <div class="pillar-tag">Daily Commute</div>
-          <h3>Perjalanan Harian</h3>
-          <p>Rute, macet, trik berangkat, dan semua yang terjadi di atas motor dari Cileungsi sampai Kemang.</p>
-          <ul class="pillar-topics">
-            <li>Jalur tercepat hari ini</li>
-            <li>Biaya bensin PP bulanan</li>
-            <li>Strategi anti macet</li>
-          </ul>
+          <div class="pillar-pct">50%</div>
+          <h3>Daily Commute</h3>
+          <p>Jalur tercepat, kondisi jalan, tips riding, dan cerita dari balik helm setiap hari kerja.</p>
         </div>
-        <div class="pillar-card reveal" data-pillar="food">
-          <div class="pillar-icon">🍽️</div>
-          <div class="pillar-tag">Food Discovery</div>
-          <h3>Kuliner</h3>
-          <p>Warung lokal, hidden gem, review jujur under 50K—ditemukan di sepanjang jalur komute.</p>
-          <ul class="pillar-topics">
-            <li>Sarapan sebelum kantor</li>
-            <li>Makan siang under 50K</li>
-            <li>Kuliner malam worth it</li>
-          </ul>
+        <div class="pillar-card">
+          <div class="pillar-icon">🍜</div>
+          <div class="pillar-pct">25%</div>
+          <h3>Food Discovery</h3>
+          <p>Warung tersembunyi, makan siang di bawah 50K, dan kuliner lokal yang belum banyak diketahui.</p>
         </div>
-        <div class="pillar-card reveal" data-pillar="explore">
+        <div class="pillar-card">
           <div class="pillar-icon">📍</div>
-          <div class="pillar-tag">Local Explore</div>
-          <h3>Explore & Wisata</h3>
-          <p>Destinasi tersembunyi di sekitar Cileungsi, Jonggol, dan koridor timur Jakarta yang sering terlewatkan.</p>
-          <ul class="pillar-topics">
-            <li>Rest area tersembunyi</li>
-            <li>Hidden gem Jonggol</li>
-            <li>Wisata dekat Cileungsi</li>
-          </ul>
+          <div class="pillar-pct">15%</div>
+          <h3>Local Explore</h3>
+          <p>Hidden gems Bogor Timur, Jonggol, Cibubur — tempat-tempat yang layak dikunjungi tapi jarang ada di algoritma.</p>
         </div>
-        <div class="pillar-card reveal" data-pillar="family">
-          <div class="pillar-icon">👨‍👩‍👧</div>
-          <div class="pillar-tag">Family Moment</div>
-          <h3>Keluarga</h3>
-          <p>Weekend bersama keluarga, jalan-jalan bareng anak, dan momen-momen yang mengingatkan kenapa semua ini worth it.</p>
-          <ul class="pillar-topics">
-            <li>Family day trip</li>
-            <li>Piknik lokal</li>
-            <li>Weekend bersama anak</li>
-          </ul>
+        <div class="pillar-card">
+          <div class="pillar-icon">👨‍👩‍👧‍👦</div>
+          <div class="pillar-pct">10%</div>
+          <h3>Family Moment</h3>
+          <p>Weekend bersama keluarga, family trip, dan momen-momen yang bikin perjalanan jadi bermakna.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── EDITORIAL PLAN ─────────────────────────────────────────── -->
-  <section class="section plan" id="plan">
+  <!-- JADWAL 30 HARI -->
+  <section class="section" id="jadwal">
     <div class="container">
-      <div class="section-label reveal">Editorial Plan</div>
-      <h2 class="section-title reveal">30 Hari Ke Depan<br/><em>Juni 2026.</em></h2>
-
-      <div class="weeks-nav reveal">
-        <button class="week-tab active" data-week="1">Week 1</button>
-        <button class="week-tab" data-week="2">Week 2</button>
-        <button class="week-tab" data-week="3">Week 3</button>
-        <button class="week-tab" data-week="4">Week 4</button>
+      <span class="eyebrow">Rencana Konten</span>
+      <h2>30 Hari Pertama</h2>
+      <p class="section-sub">Dari perkenalan sampai evaluasi — satu video, satu cerita, setiap hari.</p>
+      <div class="timeline">
+        <!-- Week 1 -->
+        <div class="week-label">Minggu 1</div>
+        <div class="timeline-grid">
+          <div class="timeline-item daily-commute"><span class="day">1</span><p>Perkenalan Urban Kelana</p></div>
+          <div class="timeline-item daily-commute"><span class="day">2</span><p>Jam terbaik berangkat dari Cileungsi</p></div>
+          <div class="timeline-item daily-commute"><span class="day">3</span><p>Biaya bensin PP Cileungsi–Kemang</p></div>
+          <div class="timeline-item food"><span class="day">4</span><p>Spot sarapan favorit</p></div>
+          <div class="timeline-item daily-commute"><span class="day">5</span><p>Jalur tercepat hari ini</p></div>
+          <div class="timeline-item food"><span class="day">6</span><p>Kuliner dekat rumah</p></div>
+          <div class="timeline-item family"><span class="day">7</span><p>Weekend bersama keluarga</p></div>
+        </div>
+        <!-- Week 2 -->
+        <div class="week-label">Minggu 2</div>
+        <div class="timeline-grid">
+          <div class="timeline-item daily-commute"><span class="day">8</span><p>Macet terparah minggu ini</p></div>
+          <div class="timeline-item daily-commute"><span class="day">9</span><p>Kenapa tinggal di Cileungsi?</p></div>
+          <div class="timeline-item explore"><span class="day">10</span><p>Rest area tersembunyi</p></div>
+          <div class="timeline-item food"><span class="day">11</span><p>Makan siang under 50K</p></div>
+          <div class="timeline-item daily-commute"><span class="day">12</span><p>Riding saat hujan</p></div>
+          <div class="timeline-item food"><span class="day">13</span><p>Review tempat makan keluarga</p></div>
+          <div class="timeline-item explore"><span class="day">14</span><p>Wisata dekat Cileungsi</p></div>
+        </div>
+        <!-- Week 3 -->
+        <div class="week-label">Minggu 3</div>
+        <div class="timeline-grid">
+          <div class="timeline-item daily-commute"><span class="day">15</span><p>POV komuter</p></div>
+          <div class="timeline-item daily-commute"><span class="day">16</span><p>Timelapse perjalanan</p></div>
+          <div class="timeline-item daily-commute"><span class="day">17</span><p>Review jalan alternatif</p></div>
+          <div class="timeline-item food"><span class="day">18</span><p>Tempat kopi favorit</p></div>
+          <div class="timeline-item daily-commute"><span class="day">19</span><p>Pengeluaran commuting bulanan</p></div>
+          <div class="timeline-item family"><span class="day">20</span><p>Family day</p></div>
+          <div class="timeline-item explore"><span class="day">21</span><p>Hidden gem Jonggol</p></div>
+        </div>
+        <!-- Week 4 -->
+        <div class="week-label">Minggu 4</div>
+        <div class="timeline-grid">
+          <div class="timeline-item daily-commute"><span class="day">22</span><p>3 jalur favorit</p></div>
+          <div class="timeline-item food"><span class="day">23</span><p>3 tempat makan favorit</p></div>
+          <div class="timeline-item explore"><span class="day">24</span><p>3 tempat wajib di Cileungsi</p></div>
+          <div class="timeline-item daily-commute"><span class="day">25</span><p>Storytelling perjalanan</p></div>
+          <div class="timeline-item daily-commute"><span class="day">26</span><p>Pelajaran dari ribuan kilometer</p></div>
+          <div class="timeline-item family"><span class="day">27</span><p>Family trip</p></div>
+          <div class="timeline-item food"><span class="day">28</span><p>Kuliner malam</p></div>
+          <div class="timeline-item daily-commute"><span class="day">29</span><p>Recap perjalanan sebulan</p></div>
+          <div class="timeline-item daily-commute"><span class="day">30</span><p>Q&amp;A dan evaluasi</p></div>
+        </div>
       </div>
-
-      <div class="week-panels">
-
-        <div class="week-panel active" data-week="1">
-          <div class="week-header">
-            <div class="week-badge week-badge--gold">WEEK 1</div>
-            <div class="week-theme">Perkenalan — Membangun Fondasi</div>
-          </div>
-          <div class="days-grid">
-            <div class="day-card" data-type="commute"><span class="day-n">H1</span><span class="day-icon">🏍️</span><p>Kenalin, saya Andri. Setiap hari PP Cileungsi–Kemang naik motor.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H2</span><span class="day-icon">🏍️</span><p>Berangkat jam berapa supaya tidak kena macet?</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H3</span><span class="day-icon">🏍️</span><p>Berapa biaya bensin PP Cileungsi–Kemang?</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H4</span><span class="day-icon">🍽️</span><p>Spot sarapan favorit sebelum masuk kantor.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H5</span><span class="day-icon">🏍️</span><p>Jalur tercepat hari ini.</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H6</span><span class="day-icon">🍽️</span><p>Kuliner dekat rumah.</p></div>
-            <div class="day-card" data-type="family"><span class="day-n">H7</span><span class="day-icon">👨‍👩‍👧</span><p>Weekend bersama keluarga.</p></div>
-          </div>
-        </div>
-
-        <div class="week-panel" data-week="2">
-          <div class="week-header">
-            <div class="week-badge week-badge--amber">WEEK 2</div>
-            <div class="week-theme">Bangun Cerita — Lebih Dalam</div>
-          </div>
-          <div class="days-grid">
-            <div class="day-card" data-type="commute"><span class="day-n">H8</span><span class="day-icon">🏍️</span><p>Macet terparah minggu ini.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H9</span><span class="day-icon">🏍️</span><p>Kenapa tinggal di Cileungsi tapi kerja di Kemang?</p></div>
-            <div class="day-card" data-type="explore"><span class="day-n">H10</span><span class="day-icon">📍</span><p>Rest area tersembunyi buat rider.</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H11</span><span class="day-icon">🍽️</span><p>Makan siang under 50 ribu di Kemang.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H12</span><span class="day-icon">🏍️</span><p>Berangkat hujan vs berangkat panas.</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H13</span><span class="day-icon">🍽️</span><p>Review tempat makan keluarga.</p></div>
-            <div class="day-card" data-type="explore"><span class="day-n">H14</span><span class="day-icon">📍</span><p>Wisata dekat Cileungsi.</p></div>
-          </div>
-        </div>
-
-        <div class="week-panel" data-week="3">
-          <div class="week-header">
-            <div class="week-badge week-badge--blue">WEEK 3</div>
-            <div class="week-theme">Eksperimen & Variasi</div>
-          </div>
-          <div class="days-grid">
-            <div class="day-card" data-type="commute"><span class="day-n">H15</span><span class="day-icon">🏍️</span><p>POV komuter.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H16</span><span class="day-icon">🏍️</span><p>Time-lapse perjalanan Cileungsi–Kemang.</p></div>
-            <div class="day-card" data-type="explore"><span class="day-n">H17</span><span class="day-icon">📍</span><p>Review jalan alternatif.</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H18</span><span class="day-icon">🍽️</span><p>Tempat kopi pinggir jalan favorit.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H19</span><span class="day-icon">🏍️</span><p>Pengeluaran commuting bulanan.</p></div>
-            <div class="day-card" data-type="family"><span class="day-n">H20</span><span class="day-icon">👨‍👩‍👧</span><p>Family day. Jalan-jalan bareng anak.</p></div>
-            <div class="day-card" data-type="explore"><span class="day-n">H21</span><span class="day-icon">📍</span><p>Hidden gem sekitar Jonggol.</p></div>
-          </div>
-        </div>
-
-        <div class="week-panel" data-week="4">
-          <div class="week-header">
-            <div class="week-badge week-badge--green">WEEK 4</div>
-            <div class="week-theme">Scale Up & Konsolidasi</div>
-          </div>
-          <div class="days-grid">
-            <div class="day-card" data-type="commute"><span class="day-n">H22</span><span class="day-icon">🏍️</span><p>3 jalur favorit saya dari Cileungsi ke Kemang.</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H23</span><span class="day-icon">🍽️</span><p>3 tempat makan favorit versi Urban Kelana.</p></div>
-            <div class="day-card" data-type="explore"><span class="day-n">H24</span><span class="day-icon">📍</span><p>3 tempat wajib dicoba di Cileungsi.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H25</span><span class="day-icon">🏍️</span><p>Storytelling perjalanan: sebuah hari di jalan.</p></div>
-            <div class="day-card" data-type="commute"><span class="day-n">H26</span><span class="day-icon">🏍️</span><p>Hal yang saya pelajari setelah ribuan km PP.</p></div>
-            <div class="day-card" data-type="family"><span class="day-n">H27</span><span class="day-icon">👨‍👩‍👧</span><p>Family trip ke tempat seru!</p></div>
-            <div class="day-card" data-type="food"><span class="day-n">H28</span><span class="day-icon">🍽️</span><p>Kuliner malam yang worth it.</p></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="plan-bonus reveal">
-        <div class="plan-bonus-item">
-          <span class="plan-bonus-day">H29</span>
-          <span>📸 Recap perjalanan sebulan. Momen terbaik & pelajaran.</span>
-        </div>
-        <div class="plan-bonus-item">
-          <span class="plan-bonus-day">H30</span>
-          <span>💬 Q&A dan evaluasi. Spill rencana konten bulan depan!</span>
-        </div>
+      <!-- Legend -->
+      <div class="legend">
+        <span class="legend-item daily-commute-dot">🏍️ Daily Commute</span>
+        <span class="legend-item food-dot">🍜 Food Discovery</span>
+        <span class="legend-item explore-dot">📍 Local Explore</span>
+        <span class="legend-item family-dot">👨‍👩‍👧‍👦 Family Moment</span>
       </div>
     </div>
   </section>
 
-  <!-- ── KPI ───────────────────────────────────────────────────── -->
-  <section class="section kpi" id="kpi">
+  <!-- KPI -->
+  <section class="section section-accent">
     <div class="container">
-      <div class="section-label reveal">Target 30 Hari</div>
-      <h2 class="section-title reveal">Sukses yang<br/><em>bisa diukur.</em></h2>
-
+      <span class="eyebrow eyebrow-light">Target Bulan Pertama</span>
       <div class="kpi-grid">
-        <div class="kpi-card reveal">
-          <div class="kpi-icon">▶</div>
-          <div class="kpi-num" data-target="30">0</div>
-          <div class="kpi-label">Video</div>
-          <div class="kpi-desc">1 video per hari selama 30 hari tanpa skip</div>
+        <div class="kpi-item">
+          <span class="kpi-num">30</span>
+          <span class="kpi-label">Video upload</span>
         </div>
-        <div class="kpi-card reveal">
-          <div class="kpi-icon">👁️</div>
-          <div class="kpi-num" data-target="5000">0</div>
-          <div class="kpi-label">Views Target</div>
-          <div class="kpi-desc">Minimal 1 video tembus 5.000 views</div>
+        <div class="kpi-item">
+          <span class="kpi-num">5K</span>
+          <span class="kpi-label">Views minimal 1 video</span>
         </div>
-        <div class="kpi-card reveal">
-          <div class="kpi-icon">📈</div>
-          <div class="kpi-num" data-target="10">0</div>
-          <div class="kpi-label">Video ≥ 1K</div>
-          <div class="kpi-desc">Minimal 10 video di atas 1.000 views</div>
+        <div class="kpi-item">
+          <span class="kpi-num">10</span>
+          <span class="kpi-label">Video di atas 1K views</span>
         </div>
-      </div>
-
-      <div class="goals-list reveal">
-        <h3>Goals Bulan Pertama</h3>
-        <div class="goal-item">
-          <div class="goal-dot"></div>
-          <span>Konsistensi upload — 1 video per hari tanpa skip</span>
-        </div>
-        <div class="goal-item">
-          <div class="goal-dot"></div>
-          <span>Menemukan format video yang paling banyak ditonton</span>
-        </div>
-        <div class="goal-item">
-          <div class="goal-dot"></div>
-          <span>Membangun komunitas awal Urban Kelana</span>
+        <div class="kpi-item">
+          <span class="kpi-num">∞</span>
+          <span class="kpi-label">Cerita yang layak dibagikan</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── SUBSCRIBE CTA ──────────────────────────────────────────── -->
-  <section class="section subscribe" id="subscribe">
-    <div class="container">
-      <div class="subscribe-inner reveal">
-        <div class="subscribe-logo" aria-hidden="true">
-          <span class="sub-urban">URBAN</span>
-          <span class="sub-kelana">Kelana</span>
-        </div>
-        <h2>Ikut dalam perjalanannya.</h2>
-        <p>Setiap hari ada cerita baru dari jalanan. Jangan sampai ketinggalan.</p>
-        <div class="subscribe-actions">
-          <a href="https://youtube.com/@urbankelana" target="_blank" rel="noopener" class="btn btn--primary btn--large">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-            Subscribe di YouTube
-          </a>
-          <a href="https://instagram.com/urbankelana" target="_blank" rel="noopener" class="btn btn--ghost">
-            Instagram →
-          </a>
-        </div>
-        <p class="subscribe-note">🏍️ Perjalanan. Rasa. Cerita. — dimulai dari Cileungsi.</p>
+  <!-- SOSMED / FOLLOW -->
+  <section class="section" id="sosmed">
+    <div class="container center">
+      <span class="eyebrow">Ikuti Perjalanan Kami</span>
+      <h2>Temukan Urban Kelana</h2>
+      <p class="section-sub">Upload setiap hari di Instagram dan TikTok. Jangan sampai ketinggalan.</p>
+      <div class="sosmed-cards">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="sosmed-card ig-card">
+          <svg class="sosmed-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          <span class="sosmed-platform">Instagram</span>
+          <span class="sosmed-handle">@urbankelana</span>
+          <span class="sosmed-cta">Ikuti →</span>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="sosmed-card tt-card">
+          <svg class="sosmed-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.16 8.16 0 0 0 4.78 1.52V6.73a4.84 4.84 0 0 1-1.01-.04z"/></svg>
+          <span class="sosmed-platform">TikTok</span>
+          <span class="sosmed-handle">@urbankelana</span>
+          <span class="sosmed-cta">Ikuti →</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="footer-urban">URBAN</span>
-        <span class="footer-kelana">Kelana</span>
-        <p>Perjalanan. Rasa. Cerita.</p>
-      </div>
-      <div class="footer-links">
-        <a href="https://youtube.com/@urbankelana" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://instagram.com/urbankelana" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://tiktok.com/@urbankelana" target="_blank" rel="noopener">TikTok</a>
-      </div>
-      <div class="footer-copy">
-        © 2026 Urban Kelana · Cileungsi, Jakarta Timur
-      </div>
+      <img src="logo.png" alt="Urban Kelana" class="footer-logo" />
+      <p class="footer-tagline">Perjalanan. Rasa. Cerita.</p>
+      <p class="footer-copy">© 2025 Urban Kelana · Cileungsi, Bogor Timur</p>
     </div>
   </footer>
 
